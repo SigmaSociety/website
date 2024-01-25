@@ -39,6 +39,13 @@ nav ul li a {
   color: #fff;
 }
 
+.logo {
+  width: 100px; /* Adjust the width as needed */
+  position: absolute;
+  left: 30px; /* Adjust the position as needed */
+  top: 7.5px; /* Adjust the position as needed */
+}
+
 /* Hero Section Styles */
 .hero {
   background-color: #f4f4f4;
