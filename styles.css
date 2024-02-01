@@ -4,6 +4,10 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #f0ece5;
+}
+h1 {
+  color: #f0ece5;
 }
 
 .container {
@@ -14,8 +18,8 @@ body {
 
 /* Header Styles */
 header {
-  background-color: #333;
-  color: #fff;
+  background-color: #31304d;
+  color: #f0ece5;
   padding: 20px 0;
   text-align: center; /* Center-align the content */
   position: relative; /* Position relative for absolute positioning */
@@ -63,24 +67,32 @@ nav ul li:first-child {
 
 nav ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #f0ece5;
 }
 
 /* Hero Section Styles */
 .hero {
-  background-color: #f4f4f4;
+  background-color: #b6bbc4;
   text-align: center;
+  /*background-image: url("donkey.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;*/
   padding: 100px 0;
 }
 
 .hero h2 {
   margin-top: 0;
+  color: #161a30;
+}
+.hero p {
+  color: #161a30;
 }
 
 .btn {
   display: inline-block;
-  background-color: #333;
-  color: #fff;
+  background-color: #31304d;
+  color: #f0ece5;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
@@ -88,13 +100,13 @@ nav ul li a {
 }
 
 .btn:hover {
-  background-color: #555;
+  background-color: #5c5a84;
 }
 
 /* Footer Styles */
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #31304d;
+  color: #f0ece5;
   text-align: center;
   padding: 20px 0;
   margin-top: 50px;
