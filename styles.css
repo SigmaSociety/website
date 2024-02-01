@@ -44,30 +44,52 @@ header h1 {
   width: 10%; /* Set width relative to the header bar */
 }
 
-nav {
-  position: absolute;
-  top: 0;
-  right: 20px; /* Adjust as needed */
+.container ul.dropdown {
+  right: 0;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.dropdown li {
+  float: right;
 }
 
-nav ul li {
-  display: inline;
-  margin-left: 20px; /* Adjust as needed */
+ul {
+  display: block;
+  text-align: right;
+  margin-left: -40px;
 }
 
-nav ul li:first-child {
-  margin-left: 0; /* Reset margin for the first item */
+ul li {
+  display: inline-block;
+  position: relative;
 }
 
-nav ul li a {
+ul li a {
+  display: block;
+  padding: 20px 25px;
+  color: #fff;
   text-decoration: none;
-  color: #f0ece5;
+  text-align: center;
+  font-size: 20px;
+}
+
+ul li ul.dropdown li {
+  display: block;
+}
+
+ul li ul.dropdown {
+  width: 100%;
+  background: #22438c;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+ul li a:hover {
+  background: #112c66;
+}
+
+ul li:hover ul.dropdown {
+  display: block;
 }
 
 /* Hero Section Styles */
