@@ -17,10 +17,33 @@ header {
   background-color: #333;
   color: #fff;
   padding: 20px 0;
+  text-align: center; /* Center-align the content */
+  position: relative; /* Position relative for absolute positioning */
 }
 
 header h1 {
   margin: 0;
+}
+
+.title {
+  margin: 0;
+  position: absolute;
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust to center precisely */
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  width: 10%; /* Set width relative to the header bar */
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  right: 20px; /* Adjust as needed */
 }
 
 nav ul {
@@ -31,19 +54,16 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin-right: 20px;
+  margin-left: 20px; /* Adjust as needed */
+}
+
+nav ul li:first-child {
+  margin-left: 0; /* Reset margin for the first item */
 }
 
 nav ul li a {
   text-decoration: none;
   color: #fff;
-}
-
-.logo {
-  width: 100px; /* Adjust the width as needed */
-  position: absolute;
-  left: 30px; /* Adjust the position as needed */
-  top: 7.5px; /* Adjust the position as needed */
 }
 
 /* Hero Section Styles */
