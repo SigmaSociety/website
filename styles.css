@@ -37,59 +37,91 @@ header h1 {
 }
 
 .logo {
-  position: absolute;
-  top: 50%;
-  left: 20px;
-  transform: translateY(-50%);
-  width: 10%; /* Set width relative to the header bar */
+  width: 15%; /* Set width relative to the header bar */
+  padding-right: 125px;
 }
 
-.container ul.dropdown {
-  right: 0;
-}
-
-.dropdown li {
-  float: right;
-}
-
-ul {
-  display: block;
-  text-align: right;
-  margin-left: -40px;
-}
-
-ul li {
-  display: inline-block;
-  position: relative;
-}
-
-ul li a {
-  display: block;
-  padding: 20px 25px;
+nav {
+  background: #000;
   color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+}
+
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 15px;
   text-decoration: none;
-  text-align: center;
-  font-size: 20px;
+  text-transform: uppercase;
+  color: #fff;
 }
 
-ul li ul.dropdown li {
-  display: block;
+nav .mainMenu li a:hover {
+  background: rgb(255,94,0);
 }
 
-ul li ul.dropdown {
-  width: 100%;
-  background: #22438c;
-  position: absolute;
-  z-index: 999;
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
   display: none;
+  cursor: pointer;
 }
 
-ul li a:hover {
-  background: #112c66;
+nav .mainMenu .closeMenu , .icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
 }
 
-ul li:hover ul.dropdown {
-  display: block;
+.fa-facebook:hover {color: rgb(0, 110, 255)}
+.fa-twitter:hover {color: rgb(86, 154, 243)}
+.fa-instagram:hover {color: rgb(255, 0, 191)}
+.fa-github:hover {color: rgb(255, 123, 0)}
+
+nav .logo {
+  margin: 6px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+@media(max-width: 800px){
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    transition: top 1s ease;
+    display: none;
+  }
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .openMenu {
+    display: block;
+  }
+  nav .mainMenu li a:hover {
+    background: none;
+    color: rgb(255, 123, 0);
+    font-size: 1.6rem;
+  }
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
 }
 
 /* Hero Section Styles */
