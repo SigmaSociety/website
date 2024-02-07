@@ -200,3 +200,40 @@ footer {
   max-width: 200px; /* Adjust this value for image size */
   height: auto;
 }
+.contact-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(400px, 1fr)); /* Adjust column width as needed */
+  grid-gap: 20px; /* Add more space between items */
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-list li {
+  width: 100%; /* Adjust this value for spacing */
+  margin: 1.5%; /* Adjust this value for spacing */
+  text-align: center;
+}
+
+.contact-list li h3 {
+  margin-top: 10px;
+  white-space: nowrap;
+}
+
+.contact-list li img {
+  width: 50%;
+  max-width: 300px; /* Adjust this value for image size */
+  height: auto;
+  border-radius: 8%;
+}
+.contact-list li p {
+  margin: 0;
+  white-space: nowrap; /* Prevent phone number from wrapping */
+}
+
+.bruh {
+  /**border: 4px solid;
+  border-radius: 15px;**/
+  padding: 5px;
+  margin: 20px;
+  box-sizing: border-box;
+}
