@@ -136,7 +136,11 @@ body {
 /* Hero Section */
 
 .hero {
-  background-color: #b6bbc4;
+  /* background-color: #b6bbc4;*/
+  background-image: url(../images/gigachad.gif);
+  background-repeat: repeat;
+  background-size: 140% 100%;
+  background-position: center;
   text-align: center;
   padding: 100px 0;
 }
