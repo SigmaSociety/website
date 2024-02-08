@@ -206,7 +206,7 @@ footer {
 }
 .contact-list {
   display: grid;
-  grid-template-columns: repeat(2, minmax(400px, 1fr)); /* Adjust column width as needed */
+  grid-template-columns: repeat(2, minmax(100px, 1fr)); /* Adjust column width as needed */
   grid-gap: 20px; /* Add more space between items */
   list-style-type: none;
   padding: 0;
