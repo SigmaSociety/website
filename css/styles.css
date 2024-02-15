@@ -1,7 +1,9 @@
+/* Import Bunny Fonts */
+@import url(https://fonts.bunny.net/css);
+
 /* Global Styles */
 
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,6 +15,9 @@ body {
     --text: #141414;
     --heading: #31304D;
     --bg: #F0ECE5;
+
+    --title-font: "Cagliostro, sans-serif";
+    --font: "Amiko, sans-serif";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,6 +25,9 @@ body {
         --text: #F0ECE5;
         --bg: #141414;
         --heading: #B6BBC4;
+
+        --title-font: "Cagliostro, sans-serif";
+        --font: "Amiko, sans-serif";
     }
 }
 
@@ -42,7 +50,7 @@ h1 {
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppina", sans-serif;
     --color1: #f0ece5;
     --color2: #161a30;
 }
@@ -75,6 +83,7 @@ body {
     display: inline-block;
     vertical-align: middle;
     text-decoration: none;
+    font-family: var(--title-font);
 }
 
 @media (max-width: 808px) {
@@ -188,6 +197,7 @@ body {
     margin-top: 0;
     color: #F0ECE5;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: var(--title-font);
 }
 
 .hero p {
@@ -204,6 +214,7 @@ body {
     border-radius: 5px;
     margin-top: 20px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: var(--font);
 }
 
 .btn:hover {
