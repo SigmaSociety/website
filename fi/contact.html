@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Sigma Älykodit</title>
         <link rel="stylesheet" href="../css/styles.css" />
+        <script src="../js/main.js"></script>
         <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -53,68 +54,30 @@
 
         <!-- Content -->
 
-        <section class="content">
-            <div class="container">
-                <h2>Työntekijämme</h2><div class="grid-container">
-                    <ul class="contact-list">
-                        <div class="bruh">
-                            <li>
-                                <h3>CEO, Venni Nummela</h3>
-                                <img src="../images/drake.jpeg" alt="bughaGIF" />
-
-                                <p>+358 45 5301694 <br />venni.nummela@sigma.com</p>
-                            </li>
-                        </div>
-                        <div class="bruh">
-                            <li>
-                                <h3>COO, Otto Laiho</h3>
-                                <img src="../images/drake.jpeg" alt="bughaGIF" />
-
-                                <p>+358 45 2071403 <br />otto.laiho@sigma.com</p>
-                            </li>
-                        </div>
-                        <div class="bruh">
-
-                            <li>
-                                <h3>CMO, Michael Eckert</h3>
-                                <img src="../images/drake.jpeg" alt="bughaGIF" />
-
-                                <p>+358 45 8640106 <br />michael.eckert@sigma.com</p>
-                            </li>
-                        </div>
-                        <div class="bruh">
-
-                            <li>
-                                <h3>CFO, Paavo Louhi</h3>
-                                <img src="../images/drake.jpeg" alt="bughaGIF" />
-
-                                <p>+358 45 1854492 <br />paavo.louhi@sigma.com</p>
-                            </li>
-                        </div>
-                        <div class="bruh">
-
-                            <li>
-                                <h3>CIO, Mikael Muuri</h3>
-                                <img src="../images/drake.jpeg" alt="bughaGIF" />
-
-                                <p>+358 45 7504106 <br />mikael.muuri@sigma.com</p>
-                            </li>
-                        </div>
-                    </ul>
-                </div>
-                <h2>Ota Yhteyttä</h2>
-                <p>
-                Onko sinulla kysyttävää tai tarvitsetko apua? Ota yhteyttä meille alla
-                olevalla lomakkeella:
-                </p>
-                <form action="#" method="POST">
-                    <input type="text" name="name" placeholder="Nimesi" />
-                    <input type="email" name="email" placeholder="Sähköpostiosoitteesi" />
-                    <textarea name="message" placeholder="Sinun viestisi"></textarea>
-                    <button type="submit">Lähetä viesti</button>
-                </form>
+           <!-- Contact Section -->
+    <div class="bruhbox">
+        <div class="box">
+            <h3>Ota Yhteyttä</h3>
+            <div class="name">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Name" id="name">
             </div>
-        </section>
+            <div class="email">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="Email" id="email">
+            </div>
+            <div class="message-box">
+                <textarea id="msg" cols="30" rows="10" placeholder="Message"></textarea>
+            </div>
+            <div class="button">
+                <button id="send" onclick="message()">Send</button>
+            </div>
+            <div class="message">
+                <div class="success" id="success">Viesti lähetetty!</div>
+                <div class="danger" id="danger">Kentät eivät voi olla tyhjiä!</div>
+            </div>
+        </div>
+    </div>
 
         <!-- Footer -->
 
