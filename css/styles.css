@@ -275,6 +275,7 @@ footer {
     border-radius: 8%;
 }
 
+<<<<<<< Updated upstream
 .contact-list li p {
     margin: 0;
     white-space: nowrap; /* Prevent phone number from wrapping */
@@ -327,3 +328,13 @@ footer {
         margin-right: 20px; /* Add some space between images */
     }
 }
+=======
+.bruh {
+  /**border: 4px solid;
+  border-radius: 15px;**/
+  padding: 5px;
+  margin: 20px;
+  box-sizing: border-box;
+}
+
+>>>>>>> Stashed changes
