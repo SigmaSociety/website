@@ -1,0 +1,12 @@
+# Site settings
+title: Sigma Society
+description: "Welcome to the Sigma Society Website"
+baseurl: "/website/en/"
+url: "https://sigmasociety.github.io"
+
+# GitHub Pages specific configuration
+repository: sigmasociety/sigmasociety.github.io
+branch: main
+
+# Main website link
+main_website_link: "https://sigmasociety.github.io/website/en/index.html"
