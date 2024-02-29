@@ -1,5 +1,5 @@
 /* Import Bunny Fonts */
-@import url(https://fonts.bunny.net/css);
+@import url(https://fonts.bunny.net/css?family=amiko:400|arimo:600i);
 
 /* Global Styles */
 
@@ -15,9 +15,10 @@ body {
     --text: #141414;
     --heading: #31304D;
     --bg: #F0ECE5;
+    --text-box: #d1d1d1;
 
-    --title-font: "Cagliostro, sans-serif";
-    --font: "Amiko, sans-serif";
+    --title-font: 'Arimo', sans-serif;
+    --font: 'Amiko', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,9 +26,10 @@ body {
         --text: #F0ECE5;
         --bg: #141414;
         --heading: #B6BBC4;
+        --text-box: #2b2b2b;
 
-        --title-font: "Cagliostro, sans-serif";
-        --font: "Amiko, sans-serif";
+        --title-font: 'Arimo', sans-serif;
+        --font: 'Amiko', sans-serif;
     }
 }
 
@@ -39,6 +41,14 @@ h1 {
     width: 80%;
     margin: 20px auto;
     padding: 20px;
+    font-family: var(--font);
+}
+
+.container h1,h2,h3 {
+    font-family: var(--title-font);
+    color: var(--heading);
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* Header */
@@ -64,6 +74,7 @@ body {
     position: relative;
     background-color: var(--color2);
     padding: 12px 20px;
+    font-family: var(--title-font);
 }
 
 .logo {
@@ -191,9 +202,11 @@ body {
     background-position: center;
     text-align: center;
     padding: 100px 0;
+    font-family: var(--font);
 }
 
 .hero h2 {
+    font-size: 30px;
     margin-top: 0;
     color: #F0ECE5;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -214,7 +227,7 @@ body {
     border-radius: 5px;
     margin-top: 20px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-family: var(--font);
+    font-family: var(--title-font);
 }
 
 .btn:hover {
@@ -230,6 +243,7 @@ footer {
     padding: 20px 0;
     width: 100%;
     clear: both; /* Clear floats */
+    font-family: var(--title-font);
 }
 
 .services .container {
@@ -283,7 +297,7 @@ footer {
     width: 50%;
     max-width: 300px; /* Adjust this value for image size */
     height: auto;
-    border-radius: 8%;
+    border-radius: 100%;
 }
 
 .contact-list li p {
@@ -294,6 +308,7 @@ footer {
 /* Apply margin to the content */
 .content {
     margin: 20px;
+    font-family: var(--font);
 }
 
 /* Style the main content area */
@@ -308,6 +323,7 @@ footer {
     margin-top: 10px;
     margin-bottom: 10px;
     color: var(--heading); /* Assuming you have defined a custom CSS variable for heading color */
+    font-family: var(--title-font);
 }
 
 /* Style paragraphs */
@@ -356,6 +372,7 @@ footer {
     border-radius: 10px;
     display: flex;
     justify-content: center;
+    font-family: var(--font);
   }
   .box{
     width: 71%;
@@ -368,12 +385,14 @@ footer {
   .box h3{
     font-size: 200%;
     margin: 2.1%;
-    color: #F0ECE5;
+    color: var(--heading);
   }
   .name{
     width: 100%;
     position: relative;
     margin-bottom: 15px;
+    font-family: var(--font);
+    color: var(--text);
   }
   .name i{
     position: absolute;
@@ -381,7 +400,7 @@ footer {
     left: 30px;
     transform: translateY(-50%);
     font-size: 20px;
-    color: #616161;
+    color: var(--text);
   }
   .name input{
     width: 100%;
@@ -389,17 +408,23 @@ footer {
     border: none;
     outline: none;
     font-size: 18px;
-    background-color: #F0ECE5;
+    background-color: var(--text-box);
     border-radius: 40px;
+    font-family: var(--font);
+    color: var(--text);
   }
   .name input::placeholder{
-    color: #616161;
+    color: var(--text);
     font-weight: 500;
+    font-family: var(--font);
+    color: var(--text);
   }
   .email{
     width: 100%;
     position: relative;
     margin-bottom: 15px;
+    font-family: var(--font);
+    color: var(--text);
   }
   .email i{
     position: absolute;
@@ -407,7 +432,7 @@ footer {
     left: 30px;
     transform: translateY(-50%);
     font-size: 20px;
-    color: #616161;
+    color: var(--font);
   }
   .email input{
     width: 100%;
@@ -415,12 +440,16 @@ footer {
     border: none;
     outline: none;
     font-size: 18px;
-    background-color: #F0ECE5;
+    background-color: var(--text-box);
     border-radius: 40px;
+    font-family: var(--font);
+    color: var(--text);
   }
   .email input::placeholder{
-    color: #616161;
+    color: var(--text);
     font-weight: 500;
+    font-family: var(--font);
+    color: var(--text);
   }
   .message-box{
     width: 100%;
@@ -433,7 +462,6 @@ footer {
     left: 30px;
     transform: translateY(-50%);
     font-size: 20px;
-    color: #bbb;
   }
   .message-box textarea{
     width: 100%;
@@ -441,11 +469,13 @@ footer {
     border: none;
     outline: none;
     font-size: 18px;
-    background-color: #F0ECE5;
+    background-color: var(--text-box);
     border-radius: 40px;
+    font-family: var(--font);
+    color: var(--text);
   }
   .message-box textarea::placeholder{
-    color: #616161;
+    color: var(--text);
     font-weight: 500;
   }
   
@@ -468,6 +498,7 @@ footer {
       background-color: #48466e; /* Change background color on hover */
       transform: translateY(-2px); /* Add a slight drop shadow effect */
     }
+    font-family: var(--title-font);
   }
   .message{
     width: 100%;
@@ -475,6 +506,7 @@ footer {
     margin-bottom: 60px;
     display: flex;
     justify-content: center;
+    font-family: var(--font);
   }
   .message .success{
     font-size: 150%;
@@ -482,6 +514,7 @@ footer {
     position: absolute;
     animation: buttons .3s linear;
     display: none;
+    font-family: var(--font);
   }
   .message .danger{
     font-size: 150%;
@@ -490,6 +523,7 @@ footer {
     transition: .3s;
     animation: buttons .15s ease;
     display: none;
+    font-family: var(--font);
   }
   @keyframes buttons{
     0%{
@@ -506,17 +540,25 @@ footer {
     .message-box textarea{
       width: 100%;
       padding: 5px 15px;
+      font-family: var(--font);
+      color: var(--font);
   }
   .email input{
     width: 100%;
     padding: 5px 15px;
+    font-family: var(--font);
+    color: var(--font);
   }
   .name input{
     width: 100%;
     padding: 5px 15px;
+    font-family: var(--font);
+    color: var(--font);
   }
   .box h3{
     font-size: 200%;
     margin: 0%;
+    font-family: var(--font);
+    color: var(--font);
   }
-  }
+}
