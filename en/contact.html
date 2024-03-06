@@ -1,88 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sigma Smart Homes</title>
-        <link rel="stylesheet" href="../css/styles.css" />
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-        />
-        <link rel="shortcut icon" type="image/svg+xml" href="../images/logo.svg" />
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=amiko:400|arimo:600i" rel="stylesheet" />
-        <script src="../js/main.js"></script>
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sigma Smart Homes</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" type="image/svg+xml" href="../images/logo.svg" />
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link
+      href="https://fonts.bunny.net/css?family=amiko:400|arimo:600i"
+      rel="stylesheet"
+    />
+    <script src="../js/main.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
 
-        <!-- Header -->
+    <header>
+      <nav>
+        <ul class="nav-bar">
+          <li class="logo">
+            <a href="index.html">
+              <img
+                alt="Donkey silhouette on a white circle"
+                src="../images/logo.svg"
+              />
+              <span>Sigma Smart Homes</span>
+            </a>
+          </li>
+          <input type="checkbox" id="check" />
+          <span class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="../fi/contact.html">Fi</a></li>
 
-        <header>
-            <nav>
-                <ul class="nav-bar">
-                    <li class="logo">
-                        <a href="index.html">
-                            <img src="../images/logo.svg" />
-                            <span>Sigma Smart Homes</span>
-                        </a>
-                    </li>
-                    <input type="checkbox" id="check" />
-                    <span class="menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="../fi/contact.html">Fi</a></li>
+            <label for="check" class="close-menu"
+              ><i class="fas fa-times"></i
+            ></label>
+          </span>
+          <label for="check" class="open-menu"
+            ><i class="fas fa-bars"></i
+          ></label>
+        </ul>
+      </nav>
+    </header>
 
-                        <label for="check" class="close-menu"
-                            ><i class="fas fa-times"></i
-                            ></label>
-                    </span>
-                    <label for="check" class="open-menu"
-                        ><i class="fas fa-bars"></i
-                        ></label>
-                </ul>
-            </nav>
-        </header>
-
-        <!-- Content -->
+    <!-- Content -->
 
     <!-- Contact Section -->
     <div class="bruhbox">
-        <div class="box">
-            <h3>Get in Touch</h3>
-            <div class="name">
-                <i class="fas fa-user"></i>
-                <input type="text" placeholder="Name" id="name">
-            </div>
-            <div class="email">
-                <i class="fas fa-envelope"></i>
-                <input type="text" placeholder="Email" id="email">
-            </div>
-            <div class="message-box">
-                <textarea id="msg" cols="30" rows="10" placeholder="Message"></textarea>
-            </div>
-            <div class="button">
-                <button id="send" onclick="message()">Send</button>
-            </div>
-            <div class="message">
-                <div class="success" id="success">Message Successfully Sent!</div>
-                <div class="danger" id="danger">Fields Can't Be Empty!</div>
-            </div>
+      <div class="box">
+        <h3>Get in Touch</h3>
+        <div class="name">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="Name" id="name" />
         </div>
+        <div class="email">
+          <i class="fas fa-envelope"></i>
+          <input type="text" placeholder="Email" id="email" />
+        </div>
+        <div class="message-box">
+          <textarea
+            id="msg"
+            cols="30"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+        </div>
+        <div class="button">
+          <button id="send" onclick="message()">Send</button>
+        </div>
+        <div class="message">
+          <div class="success" id="success">Message Successfully Sent!</div>
+          <div class="danger" id="danger">Fields Can't Be Empty!</div>
+        </div>
+      </div>
     </div>
 
-        <!-- Footer -->
+    <!-- Footer -->
 
-        <footer>
-            <div class="container">
-                <p>&copy; 2024 Sigma Smart Homes. All rights reserved.</p>
-            </div>
-        </footer>
-    </body>
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Sigma Smart Homes. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>

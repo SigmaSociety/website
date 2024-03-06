@@ -1,153 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sigma Älykodit</title>
-        <link rel="stylesheet" href="../css/styles.css" />
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-        />
-        <link rel="shortcut icon" type="image/svg+xml" href="../images/logo.svg" />
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=amiko:400|arimo:600i" rel="stylesheet" />
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sigma Älykodit</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" type="image/svg+xml" href="../images/logo.svg" />
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link
+      href="https://fonts.bunny.net/css?family=amiko:400|arimo:600i"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
 
-        <!-- Header -->
+    <header>
+      <nav>
+        <ul class="nav-bar">
+          <li class="logo">
+            <a href="index.html">
+              <img
+                alt="Aasin siluetti valkoisessa ympyrässä"
+                src="../images/logo.svg"
+              />
+              <span>Sigma Älykodit</span>
+            </a>
+          </li>
+          <input type="checkbox" id="check" />
+          <span class="menu">
+            <li><a href="index.html">Koti</a></li>
+            <li><a href="services.html">Palvelut</a></li>
+            <li><a href="about.html">Tietoa</a></li>
+            <li><a href="contact.html">Ota Yhteyttä</a></li>
+            <li><a href="../en/services.html">En</a></li>
 
-        <header>
-            <nav>
-                <ul class="nav-bar">
-                    <li class="logo">
-                        <a href="index.html">
-                            <img src="../images/logo.svg" />
-                            <span>Sigma Älykodit</span>
-                        </a>
-                    </li>
-                    <input type="checkbox" id="check" />
-                    <span class="menu">
-                        <li><a href="index.html">Koti</a></li>
-                        <li><a href="services.html">Palvelut</a></li>
-                        <li><a href="about.html">Tietoa</a></li>
-                        <li><a href="contact.html">Ota Yhteyttä</a></li>
-                        <li><a href="../en/services.html">En</a></li>
+            <label for="check" class="close-menu"
+              ><i class="fas fa-times"></i
+            ></label>
+          </span>
+          <label for="check" class="open-menu"
+            ><i class="fas fa-bars"></i
+          ></label>
+        </ul>
+      </nav>
+    </header>
 
-                        <label for="check" class="close-menu"
-                            ><i class="fas fa-times"></i
-                            ></label>
-                    </span>
-                    <label for="check" class="open-menu"
-                        ><i class="fas fa-bars"></i
-                        ></label>
-                </ul>
-            </nav>
-        </header>
+    <!-- Content -->
 
-        <!-- Content -->
+    <section class="content">
+      <div class="container">
+        <h2>Meidän palvelumme</h2>
+        <ul
+          class="service-list"
+          style="list-style: none; padding: 0; display: flex; flex-wrap: wrap"
+        >
+          <li style="flex: 1 0 24%; min-width: 200px; margin: 10px">
+            <h3>Älykäs Valaistuksen Hallinta</h3>
+            <img
+              src="../images/valaistus.jpg"
+              alt="Puhelin, jossa on valaistuksen hallintasovellus"
+              style="max-width: 100%; min-width: 200px; height: auto"
+            />
+            <p>
+              Älykäs valaistuksen hallinta tarjoaa älykkään ja energiatehokkaan
+              tavan hallita asuntosi valaistusta. Järjestelmä mahdollistaa
+              valaistuksen mukauttamisen eri tilanteisiin ja aikataulutetun
+              valaistuksen. Etäohjaus mahdollistaa myös valaistuksen hallinnan
+              asuntosi ulkopuolelta.
+            </p>
+          </li>
+          <li style="flex: 1 0 24%; min-width: 200px; margin: 10px">
+            <h3>Älykäs Lämpötilan Hallinta</h3>
+            <img
+              src="../images/lämpötila.jpg"
+              alt="Puhelin, jossa on lämpötilan hallintasovellus"
+              style="max-width: 100%; min-width: 200px; height: auto"
+            />
+            <p>
+              Älykäs Lämpötilan Hallinta takaa miellyttävän asumislämpötilan
+              vuoden ympäri älykkään säätöjärjestelmän avulla. Järjestelmä
+              automatisoi lämpötilan säädön vuodenaikojen vaihteluiden mukaan,
+              tarjoten käyttäjille energiatehokkaan ja vaivattoman kokemuksen.
+            </p>
+          </li>
+          <li style="flex: 1 0 24%; min-width: 200px; margin: 10px">
+            <h3>Turvajärjestelmät</h3>
+            <img
+              src="../images/security.jpg"
+              alt="Valvontakamera vaaleassa huoneessa"
+              style="max-width: 100%; min-width: 200px; height: auto"
+            />
+            <p>
+              Turvajärjestelmät tarjoavat kattavan suojan kotiisi.
+              Innovatiiviset turvateknologiat takaavat luotettavan valvonnan ja
+              hälytyksen mahdollisten uhkien varalta.
+            </p>
+          </li>
+          <li style="flex: 1 0 24%; min-width: 200px; margin: 10px">
+            <h3>Koti Viihdettä</h3>
+            <img
+              src="../images/entertainment.jpg"
+              alt="Kolme henkilöä katsomassa televisiota olohuoneessa"
+              style="max-width: 100%; min-width: 200px; height: auto"
+            />
+            <p>
+              Koti Viihdettä tarjoaa nautinnollisen ja monipuolisen elämyksen
+              oman kodin mukavuudesta käsin. Laadukkaat ääni- ja
+              kuvajärjestelmät luovat immersiivisen kokemuksen elokuvista
+              musiikkiin.
+            </p>
+          </li>
+          <li style="flex: 1 0 24%; min-width: 200px; margin: 10px">
+            <h3>Älykkäiden Laitteiden Integrointi</h3>
+            <img
+              src="../images/integration.jpg"
+              alt="Kaikki palvelut yhdistettynä yhteen hallintajärjestelmään"
+              style="max-width: 100%; min-width: 200px; height: auto"
+            />
+            <p>
+              Älykkäiden Laitteiden Integrointi tarjoaa vaimattoman yhteyden eri
+              laitteiden välille. Järjestelmä mahdollistaa laitteiden
+              yhteistoiminnan. Tuotteemme yhdistäminen on helppoa ja tuo yhteen
+              erilaiset tuotteemme helposti.
+            </p>
+          </li>
+          <li style="flex: 1 0 24%; min-width: 200px; margin: 10px">
+            <h3>Etäkäyttöohjaus</h3>
+            <img
+              src="../images/remote.jpg"
+              alt="Mies säätämässä laitteita puhelimella ja seinällä olevalla näytöllä"
+              style="max-width: 100%; min-width: 200px; height: auto"
+            />
+            <p>
+              Etäkäyttöohjaus tarjoaa kätevän tavan hallita laitteita ja
+              järjestelmiä missä tahansa. Älykkäät etäohjausominaisuudet tekevät
+              laitteiden hallinnasta helppoa.
+            </p>
+          </li>
+          <li style="flex: 1 0 24%; min-width: 200px; margin: 10px">
+            <h3>Energianhallinta</h3>
+            <img
+              src="../images/energy.jpg"
+              alt="Henkilö säätämässä energianhallintajärjestelmää tabletilla"
+              style="max-width: 100%; min-width: 200px; height: auto"
+            />
+            <p>
+              Energianhallinta tarjoaa älykkään tavan optimoida
+              energiankulutusta kotona. Järjestelmä mahdollistaa tarkan
+              seurannan ja automaattisen ohjauksen, edistäen kestävää
+              energiankäyttöä.
+            </p>
+          </li>
+          <li style="flex: 1 0 24%; min-width: 200px; margin: 10px">
+            <h3>Ääniohjatut Järjestelmät</h3>
+            <img
+              src="../images/voice.jpg"
+              alt="Nainen puhumassa puhelimeen ja laitteet reagoivat hänen ääneensä"
+              style="max-width: 100%; min-width: 200px; height: auto"
+            />
+            <p>
+              Ääniohjatut Järjestelmät tarjoavat käyttäjille älykkään ja helpon
+              tavan hallita eri laitteita äänikomennoilla. Innovatiivinen
+              teknologia mahdollistaa ääniohjauksen, joka tekee laitteiden
+              käytöstä helppoa ja käyttäjäystävällistä.
+            </p>
+          </li>
+          <li style="flex: 1 0 24%; min-width: 200px; margin: 10px">
+            <h3>Räätälöidyt Ratkaisut</h3>
+            <img
+              src="../images/solutions.jpg"
+              alt="Tabletti, jossa on räätälöityjä ratkaisuja esittelevä sovellus"
+              style="max-width: 100%; min-width: 200px; height: auto"
+            />
+            <p>
+              Räätälöidyt Ratkaisut tarjoavat yksilöllisiä ja kohdennettuja
+              vaihtoehtoja erilaisiin tarpeisiin. Joustavat vaihtoehtomme
+              sopeutuvat asiakkaan ainutlaatuisiin vaatimuksiin ja
+              tavoitteisiin.
+            </p>
+          </li>
+          <li style="flex: 1 0 24%; min-width: 200px; margin: 10px">
+            <h3>Ja Paljon Muuta!</h3>
+            <p>
+              Tutustu monipuoliseen valikoimaamme kotiautomaatioratkaisuja
+              löytääksesi tarpeisiisi sopivan.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-        <section class="content">
-            <div class="container">
-                <h2>Meidän palvelumme</h2>
-                <ul class="service-list" style="list-style: none; padding: 0; display: flex; flex-wrap: wrap;">
-                    <li style="flex: 1 0 24%; min-width: 200px; margin: 10px;">
-                        <h3>Älykäs Valaistuksen Hallinta</h3>
-                        <img src="../images/lämpötila.jpg" alt="Smart Lighting Control" style="max-width: 100%; min-width: 200px; height: auto;" />
-                        <p>
-                        Älykäs valaistuksen hallinta tarjoaa älykkään ja energiatehokkaan tavan hallita asuntosi valaistusta. 
-                        Järjestelmä mahdollistaa valaistuksen mukauttamisen eri tilanteisiin ja aikataulutetun valaistuksen. 
-                        Etäohjaus mahdollistaa myös valaistuksen hallinnan asuntosi ulkopuolelta.
-                        </p>
-                    </li>
-                    <li style="flex: 1 0 24%; min-width: 200px; margin: 10px;">
-                        <h3>Älykäs Lämpötilan Hallinta</h3>
-                        <img src="../images/valaistus.jpg" alt="Temperature Regulation" style="max-width: 100%; min-width: 200px; height: auto;" />
-                        <p>
-                        Älykäs Lämpötilan Hallinta takaa miellyttävän asumislämpötilan vuoden ympäri älykkään säätöjärjestelmän avulla. 
-                        Järjestelmä automatisoi lämpötilan säädön vuodenaikojen vaihteluiden mukaan, tarjoten käyttäjille energiatehokkaan ja vaivattoman kokemuksen.
-                        </p>
-                    </li>
-                    <li style="flex: 1 0 24%; min-width: 200px; margin: 10px;">
-                        <h3>Turvajärjestelmät</h3>
-                        <img src="../images/security.jpg" alt="Security Systems" style="max-width: 100%; min-width: 200px; height: auto;"/>
-                        <p>
-                        Turvajärjestelmät tarjoavat kattavan suojan kotiisi. 
-                        Innovatiiviset turvateknologiat takaavat luotettavan valvonnan ja hälytyksen mahdollisten uhkien varalta.
-                        </p>
-                    </li>
-                    <li style="flex: 1 0 24%; min-width: 200px; margin: 10px;">
-                        <h3>Koti Viihdettä</h3>
-                        <img src="../images/entertainment.jpg" alt="Home Entertainment" style="max-width: 100%; min-width: 200px; height: auto;"/>
-                        <p>
-                        Koti Viihdettä tarjoaa nautinnollisen ja monipuolisen elämyksen oman kodin mukavuudesta käsin. 
-                        Laadukkaat ääni- ja kuvajärjestelmät luovat immersiivisen kokemuksen elokuvista musiikkiin. 
-                        </p>
-                    </li>
-                    <li style="flex: 1 0 24%; min-width: 200px; margin: 10px;">
-                        <h3>Älykkäiden Laitteiden Integrointi</h3>
-                        <img src="../images/integration.jpg" alt="Smart Appliances Integration" style="max-width: 100%; min-width: 200px; height: auto;"/>
-                        <p>
-                        Älykkäiden Laitteiden Integrointi tarjoaa vaimattoman yhteyden eri laitteiden välille.
-                        Järjestelmä mahdollistaa laitteiden yhteistoiminnan. 
-                        Tuotteemme yhdistäminen on helppoa ja tuo yhteen erilaiset tuotteemme helposti.
-                        </p>
-                    </li>
-                    <li style="flex: 1 0 24%; min-width: 200px; margin: 10px;">
-                        <h3>Etäkäyttöohjaus</h3>
-                        <img src="../images/remote.jpg" alt="Remote Access Control" style="max-width: 100%; min-width: 200px; height: auto;" />
-                        <p>
-                        Etäkäyttöohjaus tarjoaa kätevän tavan hallita laitteita ja järjestelmiä missä tahansa. 
-                        Älykkäät etäohjausominaisuudet tekevät laitteiden hallinnasta helppoa.
-                        </p>
-                    </li>
-                    <li style="flex: 1 0 24%; min-width: 200px; margin: 10px;">
-                        <h3>Energianhallinta</h3>
-                        <img src="../images/energy.jpg" alt="Energy Management" style="max-width: 100%; min-width: 200px; height: auto;"/>
-                        <p>
-                        Energianhallinta tarjoaa älykkään tavan optimoida energiankulutusta kotona.
-                        Järjestelmä mahdollistaa tarkan seurannan ja automaattisen ohjauksen, edistäen kestävää energiankäyttöä.
-                        </p>
-                    </li>
-                    <li style="flex: 1 0 24%; min-width: 200px; margin: 10px;">
-                        <h3>Ääniohjatut Järjestelmät</h3>
-                        <img src="../images/voice.jpg" alt="Voice-Activated Systems" style="max-width: 100%; min-width: 200px; height: auto;"/>
-                        <p>
-                        Ääniohjatut Järjestelmät tarjoavat käyttäjille älykkään ja helpon tavan hallita eri laitteita äänikomennoilla.
-                        Innovatiivinen teknologia mahdollistaa ääniohjauksen, joka tekee laitteiden käytöstä helppoa ja käyttäjäystävällistä.
-                        </p>
-                    </li>
-                    <li style="flex: 1 0 24%; min-width: 200px; margin: 10px;">
-                        <h3>Räätälöidyt Ratkaisut</h3>
-                        <img src="../images/solutions.jpg" alt="Customized Solutions" style="max-width: 100%; min-width: 200px; height: auto;"/>
-                        <p>
-                        Räätälöidyt Ratkaisut tarjoavat yksilöllisiä ja kohdennettuja vaihtoehtoja erilaisiin tarpeisiin.
-                        Joustavat vaihtoehtomme sopeutuvat asiakkaan ainutlaatuisiin vaatimuksiin ja tavoitteisiin. 
-                        </p>
-                    </li>
-                    <li style="flex: 1 0 24%; min-width: 200px; margin: 10px;">
-                        <h3>Ja Paljon Muuta!</h3>
-                        <p>
-                        Tutustu monipuoliseen valikoimaamme kotiautomaatioratkaisuja löytääksesi tarpeisiisi sopivan.
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </section>
+    <!-- Footer -->
 
-        </div>
-        </section>
-
-        <!-- Footer -->
-
-        <footer>
-            <div class="container">
-                <p>&copy; 2024 Sigma Smart Homes. Kaikki oikeudet pidätetään.</p>
-            </div>
-        </footer>
-    </body>
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Sigma Smart Homes. Kaikki oikeudet pidätetään.</p>
+      </div>
+    </footer>
+  </body>
 </html>
