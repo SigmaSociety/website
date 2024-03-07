@@ -1,148 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sigma Smart Homes</title>
-        <link rel="stylesheet" href="../css/styles.css" />
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-        />
-        <link rel="shortcut icon" type="image/svg+xml" href="../images/logo.svg" />
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=amiko:400|arimo:600i" rel="stylesheet" />
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sigma Smart Homes</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" type="image/svg+xml" href="../images/logo.svg" />
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link
+      href="https://fonts.bunny.net/css?family=amiko:400|arimo:600i"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
 
-        <!-- Header -->
+    <header>
+      <nav>
+        <ul class="nav-bar">
+          <li class="logo">
+            <a href="index.html">
+              <img
+                src="../images/logo.svg"
+                alt="Donkey silhouette on a white circle"
+              />
+              <span>Sigma Smart Homes</span>
+            </a>
+          </li>
+          <input type="checkbox" id="check" />
+          <span class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="../fi/services.html">Fi</a></li>
 
-        <header>
-            <nav>
-                <ul class="nav-bar">
-                    <li class="logo">
-                        <a href="index.html">
-                            <img src="../images/logo.svg" />
-                            <span>Sigma Smart Homes</span>
-                        </a>
-                    </li>
-                    <input type="checkbox" id="check" />
-                    <span class="menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="../fi/services.html">Fi</a></li>
+            <label for="check" class="close-menu"
+              ><i class="fas fa-times"></i
+            ></label>
+          </span>
+          <label for="check" class="open-menu"
+            ><i class="fas fa-bars"></i
+          ></label>
+        </ul>
+      </nav>
+    </header>
 
-                        <label for="check" class="close-menu"
-                            ><i class="fas fa-times"></i
-                            ></label>
-                    </span>
-                    <label for="check" class="open-menu"
-                        ><i class="fas fa-bars"></i
-                        ></label>
-                </ul>
-            </nav>
-        </header>
+    <!-- Content -->
 
-        <!-- Content -->
+    <section class="content">
+      <div class="container">
+        <h2>Our Services</h2>
+        <ul
+          class="service-list"
+          style="list-style: none; padding: 0; display: flex; flex-wrap: wrap"
+        >
+          <li style="flex: 1 0 24%; min-width: 200px; margin: 10px">
+            <h3>Smart Lighting Control</h3>
+            <img
+              src="../images/valaistus.jpg"
+              alt="Phone with lighting control application"
+              style="max-width: 100%; min-width: 200px; height: auto"
+            />
+            <p>
+              Intelligent lighting control provides a smart and energy-efficient
+              way to manage the lighting in your home. The system allows
+              customization of lighting for different situations and scheduled
+              lighting. Remote control also enables managing the lighting from
+              outside your home.
+            </p>
+          </li>
+          <li style="flex: 1 0 24%; min-width: 200px; margin: 10px">
+            <h3>Temperature Regulation</h3>
+            <img
+              src="../images/lämpötila.jpg"
+              alt="Phone with temperature control application"
+              style="max-width: 100%; min-width: 200px; height: auto"
+            />
+            <p>
+              Intelligent Temperature Control ensures a comfortable living
+              temperature year-round through its smart adjustment system. The
+              system automates temperature regulation based on seasonal
+              variations, providing users with an energy-efficient and seamless
+              experience.
+            </p>
+          </li>
+          <li style="flex: 1 0 24%; min-width: 200px; margin: 10px">
+            <h3>Security Systems</h3>
+            <img
+              src="../images/security.jpg"
+              alt="Surveillance camera in a bright room"
+              style="max-width: 100%; min-width: 200px; height: auto"
+            />
+            <p>
+              Security systems provide comprehensive protection for your home.
+              Innovative security technologies ensure reliable monitoring and
+              alerts in case of potential threats.
+            </p>
+          </li>
+          <li style="flex: 1 0 24%; min-width: 200px; margin: 10px">
+            <h3>Home Entertainment</h3>
+            <img
+              src="../images/entertainment.jpg"
+              alt="Three people watching TV in the living room"
+              style="max-width: 100%; min-width: 200px; height: auto"
+            />
+            <p>
+              Home Entertainment offers an enjoyable and versatile experience
+              from the comfort of your own home. High-quality audio and visual
+              systems create an immersive experience from movies to music.
+            </p>
+          </li>
+          <li style="flex: 1 0 24%; min-width: 200px; margin: 10px">
+            <h3>Smart Appliances Integration</h3>
+            <img
+              src="../images/integration.jpg"
+              alt="All services integrated into one control system"
+              style="max-width: 100%; min-width: 200px; height: auto"
+            />
+            <p>
+              Integrating Smart Devices provides seamless connectivity between
+              different devices. The system enables device collaboration, making
+              it easy to connect and bring together our various products
+              effortlessly.
+            </p>
+          </li>
+          <li style="flex: 1 0 24%; min-width: 200px; margin: 10px">
+            <h3>Remote Access Control</h3>
+            <img
+              src="../images/remote.jpg"
+              alt="Man adjusting devices with phone and wall display"
+              style="max-width: 100%; min-width: 200px; height: auto"
+            />
+            <p>
+              Remote control provides a convenient way to manage devices and
+              systems from anywhere. Intelligent remote control features make
+              device management easy.
+            </p>
+          </li>
+          <li style="flex: 1 0 24%; min-width: 200px; margin: 10px">
+            <h3>Energy Management</h3>
+            <img
+              src="../images/energy.jpg"
+              alt="Person adjusting energy management system with tablet"
+              style="max-width: 100%; min-width: 200px; height: auto"
+            />
+            <p>
+              Energy management offers an intelligent way to optimize energy
+              consumption at home. The system enables precise monitoring and
+              automatic control, promoting sustainable energy usage.
+            </p>
+          </li>
+          <li style="flex: 1 0 24%; min-width: 200px; margin: 10px">
+            <h3>Voice-Activated Systems</h3>
+            <img
+              src="../images/voice.jpg"
+              alt="Woman talking on the phone and devices responding to her voice"
+              style="max-width: 100%; min-width: 200px; height: auto"
+            />
+            <p>
+              Voice-controlled systems provide users with a smart and easy way
+              to manage various devices using voice commands. Innovative
+              technology enables voice control, making device operation simple
+              and user-friendly.
+            </p>
+          </li>
+          <li style="flex: 1 0 24%; min-width: 200px; margin: 10px">
+            <h3>Customized Solutions</h3>
+            <img
+              src="../images/solutions.jpg"
+              alt="Tablet with an application showcasing customized solutions"
+              style="max-width: 100%; min-width: 200px; height: auto"
+            />
+            <p>
+              Get tailored home automation solutions designed to meet your
+              specific requirements.
+            </p>
+          </li>
+          <li style="flex: 1 0 24%; min-width: 200px; margin: 10px">
+            <h3>And Much More!</h3>
+            <p>
+              Discover the power of tailored solutions for your unique needs.
+              Let us shape the perfect solution for you. Contact us today to
+              explore the possibilities and embark on a journey towards
+              personalized excellence
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-        <section class="content">
-            <div class="container">
-                <h2>Our Services</h2>
-                <ul class="service-list" style="list-style: none; padding: 0; display: flex; flex-wrap: wrap;">
-                    <li style="flex: 1 0 24%; min-width: 200px; margin: 10px;">
-                        <h3>Smart Lighting Control</h3>
-                        <img src="../images/lämpötila.jpg" alt="Smart Lighting Control" style="max-width: 100%; min-width: 200px; height: auto;" />
-                        <p>
-                        Intelligent lighting control provides a smart and energy-efficient way to manage the lighting in your home. 
-                        The system allows customization of lighting for different situations and scheduled lighting. 
-                        Remote control also enables managing the lighting from outside your home.
-                        </p>
-                    </li>
-                    <li style="flex: 1 0 24%; min-width: 200px; margin: 10px;">
-                        <h3>Temperature Regulation</h3>
-                        <img src="../images/valaistus.jpg" alt="Temperature Regulation" style="max-width: 100%; min-width: 200px; height: auto;" />
-                        <p>
-                        Intelligent Temperature Control ensures a comfortable living temperature year-round through its smart adjustment system. 
-                        The system automates temperature regulation based on seasonal variations, providing users with an energy-efficient and seamless experience.
-                        </p>
-                    </li>
-                    <li style="flex: 1 0 24%; min-width: 200px; margin: 10px;">
-                        <h3>Security Systems</h3>
-                        <img src="../images/security.jpg" alt="Security Systems" style="max-width: 100%; min-width: 200px; height: auto;"/>
-                        <p>
-                        Security systems provide comprehensive protection for your home. 
-                        Innovative security technologies ensure reliable monitoring and alerts in case of potential threats.
-                        </p>
-                    </li>
-                    <li style="flex: 1 0 24%; min-width: 200px; margin: 10px;">
-                        <h3>Home Entertainment</h3>
-                        <img src="../images/entertainment.jpg" alt="Home Entertainment" style="max-width: 100%; min-width: 200px; height: auto;"/>
-                        <p>
-                        Home Entertainment offers an enjoyable and versatile experience from the comfort of your own home. 
-                        High-quality audio and visual systems create an immersive experience from movies to music.
-                        </p>
-                    </li>
-                    <li style="flex: 1 0 24%; min-width: 200px; margin: 10px;">
-                        <h3>Smart Appliances Integration</h3>
-                        <img src="../images/integration.jpg" alt="Smart Appliances Integration" style="max-width: 100%; min-width: 200px; height: auto;"/>
-                        <p>
-                        Integrating Smart Devices provides seamless connectivity between different devices. The system enables device collaboration, making it easy to connect and bring together our various products effortlessly.
-                        </p>
-                    </li>
-                    <li style="flex: 1 0 24%; min-width: 200px; margin: 10px;">
-                        <h3>Remote Access Control</h3>
-                        <img src="../images/remote.jpg" alt="Remote Access Control" style="max-width: 100%; min-width: 200px; height: auto;" />
-                        <p>
-                        Remote control provides a convenient way to manage devices and systems from anywhere. 
-                        Intelligent remote control features make device management easy.
-                        </p>
-                    </li>
-                    <li style="flex: 1 0 24%; min-width: 200px; margin: 10px;">
-                        <h3>Energy Management</h3>
-                        <img src="../images/energy.jpg" alt="Energy Management" style="max-width: 100%; min-width: 200px; height: auto;"/>
-                        <p>
-                        Energy management offers an intelligent way to optimize energy consumption at home. 
-                        The system enables precise monitoring and automatic control, promoting sustainable energy usage.
-                        </p>
-                    </li>
-                    <li style="flex: 1 0 24%; min-width: 200px; margin: 10px;">
-                        <h3>Voice-Activated Systems</h3>
-                        <img src="../images/voice.jpg" alt="Voice-Activated Systems" style="max-width: 100%; min-width: 200px; height: auto;"/>
-                        <p>
-                        Voice-controlled systems provide users with a smart and easy way to manage various devices using voice commands.
-                        Innovative technology enables voice control, making device operation simple and user-friendly.
-                        </p>
-                    </li>
-                    <li style="flex: 1 0 24%; min-width: 200px; margin: 10px;">
-                        <h3>Customized Solutions</h3>
-                        <img src="../images/solutions.jpg" alt="Customized Solutions" style="max-width: 100%; min-width: 200px; height: auto;"/>
-                        <p>
-                        Get tailored home automation solutions designed to meet your specific requirements.
-                        </p>
-                    </li>
-                    <li style="flex: 1 0 24%; min-width: 200px; margin: 10px;">
-                        <h3>And Much More!</h3>
-                        <p>
-                        Discover the power of tailored solutions for your unique needs.
-                        Let us shape the perfect solution for you. Contact us today to explore the possibilities and embark on a journey towards personalized excellence
-                        </p> 
-                    </li>
-                </ul>
-            </div>
-        </section>
+    <!-- Footer -->
 
-        <!-- Footer -->
-
-        <footer>
-            <div class="container">
-                <p>&copy; 2024 Sigma Smart Homes. All rights reserved.</p>
-            </div>
-        </footer>
-    </body>
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Sigma Smart Homes. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
